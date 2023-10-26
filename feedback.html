@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="author" content="Sushant Choudhary">
+      <title>SpiceCraft  Kitchen | Welcomes You</title>
+      <link rel="stylesheet" href="../css/homepage.css">
+      <script>
+         function validateForm() {
+         var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+         	document.myForm.fname.focus();
+                return false;
+            }
+            var x = document.forms["myForm"]["email"].value;
+            var atpos = x.indexOf("@");
+            var dotpos = x.lastIndexOf(".");
+            if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+                alert("Not a valid e-mail address");
+                return false;
+            }
+         var x = document.forms["myForm"]["feed"].value;
+            if (x == "") {
+                alert("Feedback must be filled out");
+         	document.myForm.feed.focus();
+                return false;
+            }
+         }
+
+      </script>
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div id="branding">
+               <h1><span class="highlight">SpiceCraft </span> Kitchen</h1>
+            </div>
+            <nav>
+               <ul>
+                  <li><a href="homepage.html">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <!-- <section id="main">
+         <div class="container">
+            <article id="main-col">
+               <h1 class="page-title">About</h1>
+               <ul id="Menu">
+                  <li>
+                     <h3>SpiceCraft Kitchen</h3>
+                     <p>Welcome to SpiceCraft Kitchen, where we transform ordinary dining into an extraordinary culinary adventure. Our restaurant is a celebration of flavors, a fusion of traditions, and a journey through the world of spices.</p>
+                  </li>
+                  <li>
+                     <h3>Our Story</h3>
+                     <p>At SpiceCraft Kitchen, we believe that food is more than sustenance; it's an experience that brings people together. Our journey began with a passion for spices and a dream to create a restaurant that marries the vibrancy of global cuisine with a touch of our own creativity. Founded in [Year], we've been on a mission to tantalize your taste buds and ignite your senses with our diverse and delectable menu.</p>
+                  </li>
+                  <li>
+                     <h3>The SpiceCraft Experience</h3>
+                     <p>Step into SpiceCraft Kitchen, and you'll find yourself surrounded by an inviting ambiance that reflects the richness of the cultures and traditions we draw inspiration from. Whether you're enjoying a quiet dinner for two or hosting a special event, our restaurant provides the perfect backdrop for unforgettable moments.</p>
+                  <li>
+                     <h3>Join Us on This Flavorful Journey</h3>
+                     <p>We invite you to join us at SpiceCraft Kitchen, where every meal is a voyage of taste and discovery. Whether you're a culinary adventurer seeking new horizons or simply looking for a delicious, comforting meal, our menu offers something for everyone.
+                        Thank you for choosing SpiceCraft Kitchen. We look forward to sharing the art of spice with you and creating lasting memories around our tables.          
+                        <br>Discover. Savor. Experience. SpiceCraft Kitchen.</p>
+                  </li>
+               </ul>
+            </article> -->
+            <aside id="sidebar">
+               <div class="dark">
+                  <h3>Give us Feedback !</h3>
+                  <form  name="myForm" class="quote" onsubmit="return validateForm();">
+                     <div>
+                        <label>Name</label><br>
+                        <input type="text" placeholder="Name" name="fname">
+                     </div>
+                     <div>
+                        <label>Email</label><br>
+                        <input type="email" placeholder="Email Address" name="email">
+                     </div>
+                     <div>
+                        <label>Feedback</label><br>
+                        <textarea placeholder="Message" maxlength="100" name="feed"></textarea>
+                     </div>
+                     <button type="submit" class="button_1">Send</button>
+                  </form>
+               </div>
+            </aside>
+         </div>
+      </section>
+
+           <article id="main-col">
+              <h2 style="background-color: #35424a; padding: 10px;"><span style="font-weight:bold;color:white">Reviews:</span></h2>
+              <ul id="Menu">
+                <li>
+                    <h3>John Doe</h3>
+                    <p>SpiceCraft Kitchen is an absolute gem! The food is incredible, and the service is top-notch. I highly recommend it.</p>
+                </li>
+                <li>
+                    <h3>Jane Doe</h3>
+                    <p>I had the pleasure of dining at SpiceCraft Kitchen recently, and I must say that it was an extraordinary culinary experience. From the moment I stepped in, I was greeted with warm hospitality that set the tone for the evening. The menu is a testament to the art of spice blending and creative cooking. The dishes are nothing short of phenomenal. Each bite is a journey through a symphony of flavors.</p>
+                </li>
+                <li>
+                    <h3>Smith</h3>
+                    <p>What a hidden gem! SpiceCraft Kitchen exceeded all my expectations. The bold and aromatic dishes made my taste buds dance with joy. The staff's knowledge of the menu was impressive, and the cozy atmosphere added to the overall experience. I'll be back for sure.</p>
+                </li>
+                <li>
+                    <h3>Glen</h3>
+                    <p>I recently celebrated a special occasion at SpiceCraft Kitchen, and it was the perfect choice. The meal was a sensory experience, and the attention to detail was evident in every dish. The staff went above and beyond to make our evening memorable. Highly recommended for special moments.</p>
+                </li>
+                <li>
+                    <h3>Adam</h3>
+                    <p>SpiceCraft Kitchen is my go-to restaurant for Indian cuisine. The authenticity and depth of flavors in their food are unparalleled. The staff is friendly and knowledgeable, helping me explore new dishes with each visit. Whether you're a spice enthusiast or not, you'll love this place.</p>
+                </li>
+                <li>
+                    <h3>Marcus</h3>
+                    <p>I stumbled upon SpiceCraft Kitchen, and I'm so glad I did. The flavors in their dishes are exquisite, and the prices are quite reasonable for the quality of food. The staff is welcoming and happy to provide recommendations. It's a gem in the local dining scene.</p>
+                </li>
+                <li>
+                    <h3>Daryl</h3>
+                    <p>SpiceCraft Kitchen has become a favorite for our family. The diverse menu ensures there's something for everyone. The combination of spices and fresh ingredients in their dishes is truly remarkable. The service is consistently excellent, making each visit enjoyable.</p>
+                </li>
+                <li>
+                    <h3>David</h3>
+                    <p>I can't stop raving about SpiceCraft Kitchen! The dining experience here is a sensory delight. From the first bite to the last, the dishes are a celebration of flavors. The staff's friendliness and the restaurant's warm atmosphere make it a place I'll keep coming back to.</p>
+                </li>
+              </ul>
+           </article>
+
+   </body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="A Best Indian restaurent">
+      <meta name="keywords" content="online site">
+      <meta name="author" content="Sushant Choudhary">
+      <title>
+         SpiceCraft  Kitchen | Welcomes You
+      </title>
+      <link rel="stylesheet" href="../css/homepage.css">
+      <script>
+         function validateForm() {
+             var x = document.forms["myForm"]["email"].value;
+             var atpos = x.indexOf("@");
+             var dotpos = x.lastIndexOf(".");
+             if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+                 alert("Not a valid e-mail address");
+                 return false;
+             }
+         }
+      </script>
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div id="branding">
+               <h1><span class="highlight">SpiceCraft </span> Kitchen</h1>
+            </div>
+            <nav>
+               <ul>
+                  <li class="current"><a href="#">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <section id="showcase">
+         <div class="container">
+         </div>
+      </section>
+      <section id="newsletter">
+         <div class="container">
+            <h3>Welcome to SpiceCraft Kitchen, where culinary artistry meets the finest spices 
+               from around the world. Our passion for flavor and the art of cooking has led us 
+               on a journey to create a dining experience like no other. At SpiceCraft Kitchen, 
+               we take pride in crafting dishes that are a harmonious blend of tradition and innovation. 
+               Our chefs infuse each recipe with a touch of creativity, using the freshest ingredients 
+               and a symphony of spices to awaken your taste buds.</h3>
+         </div>
+      </section>
+      <footer>
+         <p>
+            Thank you for visiting!
+         </p>
+      </footer>
+   </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="author" content="Sushant Choudhary">
+      <title>SpiceCraft  Kitchen | Welcomes You</title>
+      <link rel="stylesheet" href="../css/homepage.css">
+      <script>
+         function validateForm() {
+         var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+         	document.myForm.fname.focus();
+                return false;
+            }
+            var x = document.forms["myForm"]["email"].value;
+            var atpos = x.indexOf("@");
+            var dotpos = x.lastIndexOf(".");
+            if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+                alert("Not a valid e-mail address");
+                return false;
+            }
+         var x = document.forms["myForm"]["feed"].value;
+            if (x == "") {
+                alert("Feedback must be filled out");
+         	document.myForm.feed.focus();
+                return false;
+            }
+         }
+
+      </script>
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div id="branding">
+               <h1><span class="highlight">SpiceCraft </span> Kitchen</h1>
+            </div>
+            <nav>
+               <ul>
+                  <li><a href="homepage.html">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li class="current"><a href="about.html">About</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <section id="main">
+         <div class="container">
+            <article id="main-col">
+               <h1><center>About</center></h1>
+               <ul id="Menu">
+                  <li>
+                     <h3>SpiceCraft Kitchen</h3>
+                     <p>Welcome to SpiceCraft Kitchen, where we transform ordinary dining into an extraordinary culinary adventure. Our restaurant is a celebration of flavors, a fusion of traditions, and a journey through the world of spices.</p>
+                  </li>
+                  <li>
+                     <h3>Our Story</h3>
+                     <p>At SpiceCraft Kitchen, we believe that food is more than sustenance; it's an experience that brings people together. Our journey began with a passion for spices and a dream to create a restaurant that marries the vibrancy of global cuisine with a touch of our own creativity. Founded in 2003, we've been on a mission to tantalize your taste buds and ignite your senses with our diverse and delectable menu.</p>
+                  </li>
+                  <li>
+                     <h3>The SpiceCraft Experience</h3>
+                     <p>Step into SpiceCraft Kitchen, and you'll find yourself surrounded by an inviting ambiance that reflects the richness of the cultures and traditions we draw inspiration from. Whether you're enjoying a quiet dinner for two or hosting a special event, our restaurant provides the perfect backdrop for unforgettable moments.</p>
+                  <li>
+                     <h3>Join Us on This Flavorful Journey</h3>
+                     <p>We invite you to join us at SpiceCraft Kitchen, where every meal is a voyage of taste and discovery. Whether you're a culinary adventurer seeking new horizons or simply looking for a delicious, comforting meal, our menu offers something for everyone.
+                        Thank you for choosing SpiceCraft Kitchen. We look forward to sharing the art of spice with you and creating lasting memories around our tables.          
+                        <br>Discover. Savor. Experience. SpiceCraft Kitchen.</p>
+                  </li>
+               </ul>
+            </article>
+         </div>
+      </section>
+      <footer>
+         <p>Thank you for visiting!
+         </p>
+      </footer>
+   </body>
+</html>
